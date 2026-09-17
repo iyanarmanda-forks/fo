@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+ /* Fonts-Family */
+
+   --primary-regular          : Open Sans Regular;
+   --primary-italic           : Open Sans Italic;
+   --primary-medium           : Open Sans SemiBold;
+   --primary-medium-italic    : Open Sans SemiBold Italic;
+   --primary-bold             : Open Sans Bold;
+   --primary-bold-italic      : Open Sans Bold Italic;
+   --primary-extrabold        : Open Sans ExtraBold;
+   --primary-extrabold-italic : Open Sans ExtraBold Italic;
+
+   /* App Color Scheme */
+
+   --white       : #FFFFFF;
+   --white-two   : #EEEEEE;
+   --white-three : #F4F4F4;
+
+   --cool-blue   : #8191BE;
+   
+   --black       : #373737;
+}
+
+body {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: var(--primary-regular);
+  font-weight: 400;
+  line-height: 1.88;
+  font-stretch: normal;
+  letter-spacing: normal;
+  background-color: #F5F5F5;
+}
+
+.parent-content  {
+	height : 100%
+}
+
+.actual-content {
+	height : calc(100% - 64px);
+	overflow : auto;
+	padding : 72px;
+}
