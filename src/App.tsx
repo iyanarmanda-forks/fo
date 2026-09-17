@@ -1,4 +1,4 @@
-import { Grid, Paper, Typography } from '@mui/material';
+import { Grid, Stack, Paper, Typography } from '@mui/material';
 
 const reflectionText = `I learned about: 
 1. how to use adjectivve and noun: A-なN ですねu / A-いN 
@@ -16,7 +16,7 @@ function App() {
       <Grid style={{ height: '100%', width: '100%', position: 'absolute', maxHeight: '100%', maxWidth: '100%', overflow: 'hidden auto' }}>
         <Grid className="parent-content">
           <Grid className="actual-content">
-            <Grid container direction="column">
+            <Stack spacing={2}>
 
               <Paper variant="outlined" className="p-24 mt-12 mb-12">
                 <Typography variant="h6">
@@ -37,7 +37,7 @@ function App() {
                 </Typography>
               </Paper>
 
-            </Grid>
+            </Stack>
           </Grid>
         </Grid>
       </Grid>
